@@ -9,20 +9,22 @@
 	= csrf_meta_tags
 %body
 	%header
-		.warpper.clearfix
+		.wrapper.clearfix
 			#logo= link_to "Muse", root_path
 			%nav
 				- if user_signed_in?
-					= link_to current_user.name, edit_user_registration_path
+					= link_to('Settings', edit_user_registration_path, class: "button")
+					= link_to('Logout', destroy_user_session_path, :method => :delete, class: "button") 	
+						
 					= link_to "Add New Inspiration", new_post_path, class: "button"
 				- else
 					= link_to "Sign In", new_user_session_path
 					= link_to "Sign Up", new_user_registration_path, class: "button"
 
 
-	%p.notice= notice
-	%p.alert= alert
-	
+	- flash.each do |key, value|
+		= content_tag(:div, value, :class => "flash #{key}")
+
 	.wrapper
 		= yield
 	
