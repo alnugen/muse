@@ -58,6 +58,6 @@ group :development do
 end
 
 
-grouo :production do
+group :production do
 	gem pg
 end
