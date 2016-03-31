@@ -28,6 +28,10 @@ gem 'simple_form', '~> 3.2'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.1'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'will_paginate', '~> 3.0.6'
+
+#for heroku deployment
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -38,7 +38,7 @@ header {
 	width: 100%;
 	padding: 2rem 0;
 	border-bottom: 1px solid #E4E4E4;
-	
+
 	#logo {
 		float: left;
 		font-size: 1.75rem;
@@ -63,7 +63,7 @@ header {
 		}
 
 		/* user menu settings */
-		#dropdown { 
+		#dropdown {
 		  display: block;
 		  padding: 13px 16px;
 		  width: 266px;
@@ -92,7 +92,7 @@ header {
 		  border-left-color: #6c6d70;
 		}
 
-		#dropdown ul { 
+		#dropdown ul {
 		  position: absolute;
 		  top: 100%;
 		  left: -4px; /* move content -4px because of container left border */
@@ -107,7 +107,7 @@ header {
 		}
 		#dropdown ul li { font-size: 0.9em; }
 
-		#dropdown ul li a { 
+		#dropdown ul li a {
 		  text-decoration: none;
 		  display: block;
 		  color: #447dd3;
@@ -128,9 +128,16 @@ header {
 	padding: 10px 0 10px 0;
 	margin-top: 1em;
 	color: #D3D3D3;
-	
+
 }
 
+.pagination{
+	clear: both;
+	float: left;
+	display: block;
+	position: relative;
+	padding: 10px 0 10px 0;
+}
 /*
  Flash message styles
 */
